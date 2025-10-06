@@ -51,7 +51,7 @@ const Experience: React.FC = () => {
       transition={{ duration: 0.6, delay: index * 0.2 }}
     >
       {/* Timeline connector */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-700 rounded-full border-4 border-white shadow-lg z-10"></div>
       
       {/* Experience card */}
       <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:mr-auto lg:pr-8' : 'lg:ml-auto lg:pl-8'}`}>
@@ -59,7 +59,7 @@ const Experience: React.FC = () => {
           {/* Company logo placeholder */}
           <div className="flex items-start justify-between mb-4">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary-700 to-primary-900 rounded-lg flex items-center justify-center shadow-md">
                 <span className="text-white font-bold text-lg">
                   {experience.company.split(' ').map(word => word[0]).join('').substring(0, 2)}
                 </span>
@@ -68,10 +68,10 @@ const Experience: React.FC = () => {
                 <h3 className="text-xl font-bold text-secondary-900">
                   {experience.position}
                 </h3>
-                <div className="flex items-center space-x-2 text-primary-600 font-semibold">
+                <div className="flex items-center space-x-2 text-primary-700 font-semibold">
                   <span>{experience.company}</span>
                   {experience.companyUrl && (
-                    <ExternalLink size={16} className="hover:text-primary-700 cursor-pointer" />
+                    <ExternalLink size={16} className="hover:text-primary-800 cursor-pointer" />
                   )}
                 </div>
               </div>
@@ -124,7 +124,7 @@ const Experience: React.FC = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.2 + idx * 0.1 }}
                 >
-                  <span className="text-primary-600 mt-1">•</span>
+                  <span className="text-primary-700 mt-1">•</span>
                   <span>{responsibility}</span>
                 </motion.li>
               ))}
@@ -135,7 +135,7 @@ const Experience: React.FC = () => {
           {experience.achievements && experience.achievements.length > 0 && (
             <div className="mb-4">
               <h4 className="font-semibold text-secondary-900 mb-2 flex items-center space-x-1">
-                <Award size={16} className="text-primary-600" />
+                <Award size={16} className="text-primary-700" />
                 <span>Key Achievements:</span>
               </h4>
               <ul className="space-y-1">

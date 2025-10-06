@@ -125,13 +125,13 @@ const Contact: React.FC = () => {
                 transition={{ type: 'spring', stiffness: 300 }}
               >
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                  <Mail className="text-primary-600" size={20} />
+                  <Mail className="text-primary-700" size={20} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-secondary-900">Email</h4>
                   <a 
                     href={`mailto:${contactInfo.email}`}
-                    className="text-secondary-600 hover:text-primary-600 transition-colors"
+                    className="text-secondary-600 hover:text-primary-700 transition-colors"
                   >
                     {contactInfo.email}
                   </a>
@@ -145,13 +145,13 @@ const Contact: React.FC = () => {
                   transition={{ type: 'spring', stiffness: 300 }}
                 >
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <Phone className="text-primary-600" size={20} />
+                    <Phone className="text-primary-700" size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-secondary-900">{t('contact.info.phone')}</h4>
                     <a 
                       href={`tel:${contactInfo.phone}`}
-                      className="text-secondary-600 hover:text-primary-600 transition-colors"
+                      className="text-secondary-600 hover:text-primary-700 transition-colors"
                     >
                       {contactInfo.phone}
                     </a>
@@ -166,7 +166,7 @@ const Contact: React.FC = () => {
                   transition={{ type: 'spring', stiffness: 300 }}
                 >
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <MapPin className="text-primary-600" size={20} />
+                    <MapPin className="text-primary-700" size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-secondary-900">{t('contact.info.location')}</h4>
@@ -177,8 +177,8 @@ const Contact: React.FC = () => {
             </div>
 
             {contactInfo.availability && (
-              <div className="p-4 bg-primary-50 rounded-lg border border-primary-200">
-                <p className="text-primary-800 font-medium">
+              <div className="p-4 bg-primary-50 rounded-lg border border-primary-300">
+                <p className="text-primary-900 font-semibold">
                   {contactInfo.availability}
                 </p>
               </div>

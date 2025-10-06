@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 via-white to-secondary-50 pt-16">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-white to-gray-50 pt-16">
       <div className="section-padding container-max-width">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <span className="text-primary-600 font-medium text-lg tracking-wide">{t('hero.greeting')}</span>
+              <span className="text-primary-700 font-semibold text-lg tracking-wide">{t('hero.greeting')}</span>
             </motion.div>
 
             {/* Name */}
@@ -102,7 +102,7 @@ const Hero: React.FC = () => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary-600 hover:text-primary-600 transition-colors duration-200"
+                  className="text-secondary-600 hover:text-primary-700 transition-colors duration-200"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0, y: 20 }}
@@ -153,10 +153,10 @@ const Hero: React.FC = () => {
               transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             >
               {/* Background decoration */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full blur-2xl opacity-20 scale-110"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full blur-2xl opacity-15 scale-110"></div>
               
               {/* Profile image container */}
-              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl ring-4 ring-primary-100">
                 {personalInfo.profileImage ? (
                   <img
                     src={personalInfo.profileImage}
@@ -165,7 +165,7 @@ const Hero: React.FC = () => {
                   />
                 ) : (
                   // Placeholder when no image is provided
-                  <div className="w-full h-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-primary-700 to-primary-900 flex items-center justify-center">
                     <span className="text-white text-6xl font-bold">
                       {personalInfo.name.split(' ').map(n => n[0]).join('')}
                     </span>
@@ -185,7 +185,7 @@ const Hero: React.FC = () => {
         >
           <motion.button
             onClick={scrollToAbout}
-            className="flex flex-col items-center space-y-2 text-secondary-600 hover:text-primary-600 transition-colors duration-200"
+            className="flex flex-col items-center space-y-2 text-secondary-600 hover:text-primary-700 transition-colors duration-200"
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
           >

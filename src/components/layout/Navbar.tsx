@@ -87,8 +87,8 @@ const Navbar: React.FC = () => {
                   onClick={() => scrollToSection(item.href)}
                   className={`px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-200 ${
                     activeSection === item.href.substring(1)
-                      ? 'text-primary-600'
-                      : 'text-secondary-700 hover:text-primary-600'
+                      ? 'text-primary-700 font-semibold'
+                      : 'text-secondary-700 hover:text-primary-700'
                   }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -115,7 +115,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <motion.button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-secondary-700 hover:text-primary-600 hover:bg-secondary-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-secondary-700 hover:text-primary-700 hover:bg-secondary-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-600"
               whileTap={{ scale: 0.95 }}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -141,8 +141,8 @@ const Navbar: React.FC = () => {
                   onClick={() => scrollToSection(item.href)}
                   className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-colors duration-200 ${
                     activeSection === item.href.substring(1)
-                      ? 'text-primary-600 bg-primary-50'
-                      : 'text-secondary-700 hover:text-primary-600 hover:bg-secondary-50'
+                      ? 'text-primary-700 bg-primary-50 font-semibold'
+                      : 'text-secondary-700 hover:text-primary-700 hover:bg-secondary-50'
                   }`}
                   whileTap={{ scale: 0.98 }}
                 >

@@ -142,22 +142,22 @@ export const projects: Project[] = [
     role: 'مديرة التسويق الرقمي'
   },
   {
-  id: '2',
-  title: 'موقع شخصي بتقنية React',
-  description: 'تطوير موقع شخصي حديث باستخدام React و Vite مع تصميم متجاوب وواجهة مستخدم احترافية.',
-  longDescription: 'قمت بتصميم وتطوير موقع شخصي من الصفر باستخدام مكتبة React وتقنية Vite لزيادة الأداء وسرعة التحميل. ركزت على واجهة مستخدم متجاوبة وتصميم حديث يعتمد على مكونات قابلة لإعادة الاستخدام. الموقع يتضمن معرض أعمال تفاعلي، نبذة تعريفية، ونموذج تواصل. تم تطبيق أفضل الممارسات في كتابة الكود وتنظيم المكونات باستخدام React Hooks و CSS Modules / TailwindCSS.',
-  image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80',
-  technologies: ['React', 'Vite', 'TailwindCSS', 'JavaScript', 'Responsive Design'],
-  category: 'web',
-  status: 'completed',
-  featured: true,
-  demoUrl: 'https://balygh-22ih.vercel.app', // ضع رابط العرض الحي هنا
-  githubUrl: 'https://github.com/balygh/portfolio', // أو رابط المستودع
-  startDate: '2023-05',
-  endDate: '2023-09',
-  teamSize: 1,
-  role: 'مطور واجهات أمامية (Front-End Developer)'
-},
+    id: '2',
+    title: 'موقع شخصي بتقنيات الويب',
+    description: 'تطوير موقع شخصي باستخدام HTML و CSS مع تصميم متجاوب وواجهة مستخدم جذابة',
+    longDescription: 'قمت بتطوير موقع شخصي من الصفر باستخدام HTML و CSS مع التركيز على التصميم المتجاوب وتجربة المستخدم. يتضمن الموقع معرض أعمال، نبذة شخصية، ونموذج اتصال. تم تطبيق أفضل الممارسات في كتابة الكود والتصميم.',
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+    category: 'web',
+    status: 'completed',
+    featured: true,
+    demoUrl: '',
+    githubUrl: '',
+    startDate: '2022-08',
+    endDate: '2022-12',
+    teamSize: 1,
+    role: 'مطورة ويب'
+  },
   {
     id: '3',
     title: 'نظام إدارة قاعدة بيانات Oracle',

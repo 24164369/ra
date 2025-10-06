@@ -93,7 +93,7 @@ const About: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 300 }}
               >
-                <div className="text-3xl font-bold text-primary-600">3+</div>
+                <div className="text-3xl font-bold text-primary-700">3+</div>
                 <div className="text-secondary-600">{t('about.stats.experience')}</div>
               </motion.div>
               <motion.div
@@ -101,7 +101,7 @@ const About: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 300 }}
               >
-                <div className="text-3xl font-bold text-primary-600">50+</div>
+                <div className="text-3xl font-bold text-primary-700">50+</div>
                 <div className="text-secondary-600">{t('about.stats.projects')}</div>
               </motion.div>
             </div>
@@ -117,10 +117,10 @@ const About: React.FC = () => {
           >
             <div className="relative">
               {/* Background decoration */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-2xl blur-2xl opacity-20 scale-110"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl blur-2xl opacity-15 scale-110"></div>
               
               {/* Image container */}
-              <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl ring-4 ring-primary-100">
                 <img
                   src={personalInfo.profileImage}
                   alt={personalInfo.name}

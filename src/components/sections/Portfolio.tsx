@@ -184,7 +184,7 @@ const Portfolio: React.FC = () => {
               onClick={() => setFilter(category)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 filter === category
-                  ? 'bg-primary-600 text-white shadow-md'
+                  ? 'bg-primary-700 text-white shadow-lg'
                   : 'bg-white text-secondary-700 hover:bg-secondary-100 border border-secondary-200'
               }`}
               whileHover={{ scale: 1.05 }}
