@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Rana Mohammed Ali Thabet Al-Ariqi",
+    "title": "Information Technology Student",
+    "description": "I strive to empower myself in the field of technology, and make an impact that goes beyond skill to a noticeable mark on those around me. I have experience in managing and mediating social media platforms and skill in negotiating with different types of clients.",
+    "getInTouch": "Get in Touch",
+    "downloadResume": "Download Resume",
+    "scrollDown": "Scroll Down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know more about my background, skills, and what drives my passion for development",
+    "description1": "I'm a passionate full-stack developer with over 3 years of experience in creating digital solutions that make a difference. My journey in tech started with a curiosity about how things work, which led me to pursue computer science and eventually specialize in web development.",
+    "description2": "I believe in writing clean, maintainable code and creating user experiences that are both beautiful and functional. My approach combines technical expertise with creative problem-solving, always keeping the end user in mind.",
+    "description3": "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community through blog posts and mentoring.",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "photo": "Professional Photo"
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend"
+    }
+  },
+  "experience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey and key achievements"
+  },
+  "projects": {
+    "title": "My Portfolio",
+    "subtitle": "A showcase of my recent work and personal projects",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your next project or just say hello",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    }
+  },
+  "footer": {
+    "name": "Your Name",
+    "description": "Full-stack developer passionate about creating beautiful, functional, and user-centered digital experiences.",
+    "quickLinks": "Quick Links",
+    "getInTouch": "Get In Touch",
+    "readyToWork": "Ready to work together?",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with",
+    "andReact": "and React",
+    "backToTop": "Back to top",
+    "by": "by"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again"
+  }
+}
