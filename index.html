@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio-app</title>
+
+    <!-- Arabic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <style>
+      /* Force Arabic fonts - using system fonts first */
+      html[dir="rtl"],
+      html[dir="rtl"] *,
+      html[dir="rtl"] h1,
+      html[dir="rtl"] h2,
+      html[dir="rtl"] h3,
+      html[dir="rtl"] h4,
+      html[dir="rtl"] h5,
+      html[dir="rtl"] h6,
+      html[dir="rtl"] p,
+      html[dir="rtl"] span,
+      html[dir="rtl"] div,
+      html[dir="rtl"] button,
+      html[dir="rtl"] a {
+        font-family: 'Almarai', 'Segoe UI', 'Tahoma', 'Arial Unicode MS', Arial, sans-serif !important;
+        font-weight: 400 !important;
+      }
+
+      html[dir="rtl"] h1,
+      html[dir="rtl"] h2,
+      html[dir="rtl"] h3,
+      html[dir="rtl"] h4,
+      html[dir="rtl"] h5,
+      html[dir="rtl"] h6 {
+        font-weight: 700 !important;
+      }
+
+      html[dir="rtl"] .gradient-text {
+        font-weight: 800 !important;
+      }
+    </style>
+
+    <script>
+      // Force Arabic font application
+      document.addEventListener('DOMContentLoaded', function() {
+        if (document.documentElement.getAttribute('dir') === 'rtl') {
+          const style = document.createElement('style');
+          style.textContent = `
+            * {
+              font-family: 'Almarai', 'Segoe UI', 'Tahoma', 'Arial Unicode MS', Arial, sans-serif !important;
+            }
+          `;
+          document.head.appendChild(style);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
